@@ -28,16 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             hopeDatePicker1 = new ReaLTaiizor.Controls.HopeDatePicker();
             separator1 = new ReaLTaiizor.Controls.Separator();
             nightPanel1 = new ReaLTaiizor.Controls.NightPanel();
-            spaceLabel1 = new ReaLTaiizor.Controls.SpaceLabel();
-            crownComboBox1 = new ReaLTaiizor.Controls.CrownComboBox();
-            textBoxEdit1 = new ReaLTaiizor.Controls.TextBoxEdit();
+            crownTextBox2 = new ReaLTaiizor.Controls.CrownTextBox();
+            spaceLabel4 = new ReaLTaiizor.Controls.SpaceLabel();
+            crownTextBox1 = new ReaLTaiizor.Controls.CrownTextBox();
+            CategoryComboBox2 = new ReaLTaiizor.Controls.CrownComboBox();
+            spaceLabel3 = new ReaLTaiizor.Controls.SpaceLabel();
+            PriorityComboBox1 = new ReaLTaiizor.Controls.CrownComboBox();
             spaceLabel2 = new ReaLTaiizor.Controls.SpaceLabel();
+            spaceLabel1 = new ReaLTaiizor.Controls.SpaceLabel();
             panel1 = new ReaLTaiizor.Controls.Panel();
+            foreverClose1 = new ReaLTaiizor.Controls.ForeverClose();
+            button2 = new ReaLTaiizor.Controls.Button();
+            button1 = new ReaLTaiizor.Controls.Button();
+            poisonDataGridView1 = new ReaLTaiizor.Controls.PoisonDataGridView();
+            separator2 = new ReaLTaiizor.Controls.Separator();
             nightPanel1.SuspendLayout();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)poisonDataGridView1).BeginInit();
             SuspendLayout();
             // 
             // hopeDatePicker1
@@ -81,8 +94,16 @@
             // 
             // nightPanel1
             // 
+            nightPanel1.Controls.Add(crownTextBox2);
+            nightPanel1.Controls.Add(spaceLabel4);
+            nightPanel1.Controls.Add(crownTextBox1);
+            nightPanel1.Controls.Add(CategoryComboBox2);
+            nightPanel1.Controls.Add(spaceLabel3);
             nightPanel1.Controls.Add(hopeDatePicker1);
             nightPanel1.Controls.Add(separator1);
+            nightPanel1.Controls.Add(PriorityComboBox1);
+            nightPanel1.Controls.Add(spaceLabel2);
+            nightPanel1.Controls.Add(spaceLabel1);
             nightPanel1.ForeColor = Color.FromArgb(250, 250, 250);
             nightPanel1.LeftSideColor = Color.FromArgb(41, 44, 61);
             nightPanel1.Location = new Point(12, 9);
@@ -92,51 +113,80 @@
             nightPanel1.Size = new Size(278, 602);
             nightPanel1.TabIndex = 2;
             // 
-            // spaceLabel1
+            // crownTextBox2
             // 
-            spaceLabel1.Customization = "/v7+/yoqKv8=";
-            spaceLabel1.Font = new Font("Verdana", 8F);
-            spaceLabel1.Image = null;
-            spaceLabel1.Location = new Point(8, 8);
-            spaceLabel1.Name = "spaceLabel1";
-            spaceLabel1.NoRounding = false;
-            spaceLabel1.Size = new Size(75, 40);
-            spaceLabel1.TabIndex = 6;
-            spaceLabel1.Text = "Task";
-            spaceLabel1.TextAlignment = HorizontalAlignment.Center;
-            spaceLabel1.Transparent = false;
+            crownTextBox2.BackColor = Color.FromArgb(69, 73, 74);
+            crownTextBox2.BorderStyle = BorderStyle.FixedSingle;
+            crownTextBox2.ForeColor = Color.FromArgb(220, 220, 220);
+            crownTextBox2.Location = new Point(90, 476);
+            crownTextBox2.Multiline = true;
+            crownTextBox2.Name = "crownTextBox2";
+            crownTextBox2.Size = new Size(172, 118);
+            crownTextBox2.TabIndex = 13;
             // 
-            // crownComboBox1
+            // spaceLabel4
             // 
-            crownComboBox1.DrawMode = DrawMode.OwnerDrawVariable;
-            crownComboBox1.FormattingEnabled = true;
-            crownComboBox1.Location = new Point(89, 50);
-            crownComboBox1.Name = "crownComboBox1";
-            crownComboBox1.Size = new Size(172, 24);
-            crownComboBox1.TabIndex = 7;
+            spaceLabel4.Customization = "/v7+/yoqKv8=";
+            spaceLabel4.Font = new Font("Verdana", 8F);
+            spaceLabel4.Image = null;
+            spaceLabel4.Location = new Point(12, 476);
+            spaceLabel4.Name = "spaceLabel4";
+            spaceLabel4.NoRounding = false;
+            spaceLabel4.Size = new Size(75, 40);
+            spaceLabel4.TabIndex = 12;
+            spaceLabel4.Text = "Not";
+            spaceLabel4.TextAlignment = HorizontalAlignment.Center;
+            spaceLabel4.Transparent = false;
             // 
-            // textBoxEdit1
+            // crownTextBox1
             // 
-            textBoxEdit1.BackColor = Color.Transparent;
-            textBoxEdit1.Font = new Font("Tahoma", 11F);
-            textBoxEdit1.ForeColor = Color.FromArgb(176, 183, 191);
-            textBoxEdit1.Image = null;
-            textBoxEdit1.Location = new Point(89, 7);
-            textBoxEdit1.MaxLength = 32767;
-            textBoxEdit1.Multiline = false;
-            textBoxEdit1.Name = "textBoxEdit1";
-            textBoxEdit1.ReadOnly = false;
-            textBoxEdit1.Size = new Size(378, 41);
-            textBoxEdit1.TabIndex = 5;
-            textBoxEdit1.TextAlignment = HorizontalAlignment.Left;
-            textBoxEdit1.UseSystemPasswordChar = false;
+            crownTextBox1.BackColor = Color.FromArgb(69, 73, 74);
+            crownTextBox1.BorderStyle = BorderStyle.FixedSingle;
+            crownTextBox1.ForeColor = Color.FromArgb(220, 220, 220);
+            crownTextBox1.Location = new Point(90, 313);
+            crownTextBox1.Multiline = true;
+            crownTextBox1.Name = "crownTextBox1";
+            crownTextBox1.Size = new Size(172, 95);
+            crownTextBox1.TabIndex = 11;
+            // 
+            // CategoryComboBox2
+            // 
+            CategoryComboBox2.DrawMode = DrawMode.OwnerDrawVariable;
+            CategoryComboBox2.FormattingEnabled = true;
+            CategoryComboBox2.Location = new Point(90, 446);
+            CategoryComboBox2.Name = "CategoryComboBox2";
+            CategoryComboBox2.Size = new Size(172, 24);
+            CategoryComboBox2.TabIndex = 10;
+            // 
+            // spaceLabel3
+            // 
+            spaceLabel3.Customization = "/v7+/yoqKv8=";
+            spaceLabel3.Font = new Font("Verdana", 8F);
+            spaceLabel3.Image = null;
+            spaceLabel3.Location = new Point(9, 445);
+            spaceLabel3.Name = "spaceLabel3";
+            spaceLabel3.NoRounding = false;
+            spaceLabel3.Size = new Size(75, 25);
+            spaceLabel3.TabIndex = 9;
+            spaceLabel3.Text = "Category";
+            spaceLabel3.TextAlignment = HorizontalAlignment.Center;
+            spaceLabel3.Transparent = false;
+            // 
+            // PriorityComboBox1
+            // 
+            PriorityComboBox1.DrawMode = DrawMode.OwnerDrawVariable;
+            PriorityComboBox1.FormattingEnabled = true;
+            PriorityComboBox1.Location = new Point(90, 414);
+            PriorityComboBox1.Name = "PriorityComboBox1";
+            PriorityComboBox1.Size = new Size(172, 24);
+            PriorityComboBox1.TabIndex = 7;
             // 
             // spaceLabel2
             // 
             spaceLabel2.Customization = "/v7+/yoqKv8=";
             spaceLabel2.Font = new Font("Verdana", 8F);
             spaceLabel2.Image = null;
-            spaceLabel2.Location = new Point(7, 51);
+            spaceLabel2.Location = new Point(9, 414);
             spaceLabel2.Name = "spaceLabel2";
             spaceLabel2.NoRounding = false;
             spaceLabel2.Size = new Size(75, 25);
@@ -145,13 +195,28 @@
             spaceLabel2.TextAlignment = HorizontalAlignment.Center;
             spaceLabel2.Transparent = false;
             // 
+            // spaceLabel1
+            // 
+            spaceLabel1.Customization = "/v7+/yoqKv8=";
+            spaceLabel1.Font = new Font("Verdana", 8F);
+            spaceLabel1.Image = null;
+            spaceLabel1.Location = new Point(12, 313);
+            spaceLabel1.Name = "spaceLabel1";
+            spaceLabel1.NoRounding = false;
+            spaceLabel1.Size = new Size(75, 40);
+            spaceLabel1.TabIndex = 6;
+            spaceLabel1.Text = "Task";
+            spaceLabel1.TextAlignment = HorizontalAlignment.Center;
+            spaceLabel1.Transparent = false;
+            // 
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(39, 51, 63);
-            panel1.Controls.Add(spaceLabel2);
-            panel1.Controls.Add(textBoxEdit1);
-            panel1.Controls.Add(crownComboBox1);
-            panel1.Controls.Add(spaceLabel1);
+            panel1.Controls.Add(foreverClose1);
+            panel1.Controls.Add(button2);
+            panel1.Controls.Add(button1);
+            panel1.Controls.Add(poisonDataGridView1);
+            panel1.Controls.Add(separator2);
             panel1.EdgeColor = Color.FromArgb(32, 41, 50);
             panel1.Location = new Point(296, 9);
             panel1.Name = "panel1";
@@ -161,6 +226,114 @@
             panel1.TabIndex = 2;
             panel1.Text = "panel1";
             // 
+            // foreverClose1
+            // 
+            foreverClose1.BackColor = Color.White;
+            foreverClose1.BaseColor = Color.FromArgb(45, 47, 49);
+            foreverClose1.DefaultLocation = true;
+            foreverClose1.Dock = DockStyle.Right;
+            foreverClose1.DownColor = Color.FromArgb(30, 0, 0, 0);
+            foreverClose1.Font = new Font("Marlett", 10F);
+            foreverClose1.Location = new Point(611, 5);
+            foreverClose1.Name = "foreverClose1";
+            foreverClose1.OverColor = Color.FromArgb(30, 255, 255, 255);
+            foreverClose1.Size = new Size(18, 18);
+            foreverClose1.TabIndex = 12;
+            foreverClose1.Text = "foreverClose1";
+            foreverClose1.TextColor = Color.FromArgb(243, 243, 243);
+            foreverClose1.Click += foreverClose1_Click;
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.Transparent;
+            button2.BorderColor = Color.FromArgb(32, 34, 37);
+            button2.EnteredBorderColor = Color.FromArgb(165, 37, 37);
+            button2.EnteredColor = Color.FromArgb(32, 34, 37);
+            button2.Font = new Font("Microsoft Sans Serif", 12F);
+            button2.Image = null;
+            button2.ImageAlign = ContentAlignment.MiddleLeft;
+            button2.InactiveColor = Color.FromArgb(32, 34, 37);
+            button2.Location = new Point(134, 8);
+            button2.Name = "button2";
+            button2.PressedBorderColor = Color.FromArgb(165, 37, 37);
+            button2.PressedColor = Color.FromArgb(165, 37, 37);
+            button2.Size = new Size(120, 40);
+            button2.TabIndex = 11;
+            button2.Text = "Work";
+            button2.TextAlignment = StringAlignment.Center;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.Transparent;
+            button1.BorderColor = Color.FromArgb(32, 34, 37);
+            button1.EnteredBorderColor = Color.FromArgb(165, 37, 37);
+            button1.EnteredColor = Color.FromArgb(32, 34, 37);
+            button1.Font = new Font("Microsoft Sans Serif", 12F);
+            button1.Image = null;
+            button1.ImageAlign = ContentAlignment.MiddleLeft;
+            button1.InactiveColor = Color.FromArgb(32, 34, 37);
+            button1.Location = new Point(8, 8);
+            button1.Name = "button1";
+            button1.PressedBorderColor = Color.FromArgb(165, 37, 37);
+            button1.PressedColor = Color.FromArgb(165, 37, 37);
+            button1.Size = new Size(120, 40);
+            button1.TabIndex = 10;
+            button1.Text = "Personel";
+            button1.TextAlignment = StringAlignment.Center;
+            button1.Click += button1_Click;
+            // 
+            // poisonDataGridView1
+            // 
+            poisonDataGridView1.AllowUserToResizeRows = false;
+            poisonDataGridView1.BackgroundColor = Color.FromArgb(255, 255, 255);
+            poisonDataGridView1.BorderStyle = BorderStyle.None;
+            poisonDataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.None;
+            poisonDataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = Color.FromArgb(0, 174, 219);
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
+            dataGridViewCellStyle1.ForeColor = Color.FromArgb(255, 255, 255);
+            dataGridViewCellStyle1.SelectionBackColor = Color.FromArgb(0, 198, 247);
+            dataGridViewCellStyle1.SelectionForeColor = Color.FromArgb(17, 17, 17);
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            poisonDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            poisonDataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.FromArgb(255, 255, 255);
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
+            dataGridViewCellStyle2.ForeColor = Color.FromArgb(136, 136, 136);
+            dataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(0, 198, 247);
+            dataGridViewCellStyle2.SelectionForeColor = Color.FromArgb(17, 17, 17);
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
+            poisonDataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
+            poisonDataGridView1.EnableHeadersVisualStyles = false;
+            poisonDataGridView1.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
+            poisonDataGridView1.GridColor = Color.FromArgb(255, 255, 255);
+            poisonDataGridView1.Location = new Point(8, 71);
+            poisonDataGridView1.Name = "poisonDataGridView1";
+            poisonDataGridView1.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = Color.FromArgb(0, 174, 219);
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
+            dataGridViewCellStyle3.ForeColor = Color.FromArgb(255, 255, 255);
+            dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(0, 198, 247);
+            dataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(17, 17, 17);
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
+            poisonDataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            poisonDataGridView1.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            poisonDataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            poisonDataGridView1.Size = new Size(618, 523);
+            poisonDataGridView1.TabIndex = 9;
+            // 
+            // separator2
+            // 
+            separator2.LineColor = Color.Gray;
+            separator2.Location = new Point(8, 51);
+            separator2.Name = "separator2";
+            separator2.Size = new Size(618, 14);
+            separator2.TabIndex = 2;
+            separator2.Text = "separator2";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -169,14 +342,17 @@
             ClientSize = new Size(938, 623);
             Controls.Add(panel1);
             Controls.Add(nightPanel1);
-            FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            FormBorderStyle = FormBorderStyle.None;
             MaximumSize = new Size(1920, 1040);
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "ToDo";
             TransparencyKey = Color.Fuchsia;
+            Load += Form1_Load;
             nightPanel1.ResumeLayout(false);
+            nightPanel1.PerformLayout();
             panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)poisonDataGridView1).EndInit();
             ResumeLayout(false);
         }
 
@@ -186,9 +362,18 @@
         private ReaLTaiizor.Controls.Separator separator1;
         private ReaLTaiizor.Controls.NightPanel nightPanel1;
         private ReaLTaiizor.Controls.SpaceLabel spaceLabel1;
-        private ReaLTaiizor.Controls.CrownComboBox crownComboBox1;
-        private ReaLTaiizor.Controls.TextBoxEdit textBoxEdit1;
+        private ReaLTaiizor.Controls.CrownComboBox PriorityComboBox1;
         private ReaLTaiizor.Controls.SpaceLabel spaceLabel2;
         private ReaLTaiizor.Controls.Panel panel1;
+        private ReaLTaiizor.Controls.Separator separator2;
+        private ReaLTaiizor.Controls.PoisonDataGridView poisonDataGridView1;
+        private ReaLTaiizor.Controls.CrownTextBox crownTextBox2;
+        private ReaLTaiizor.Controls.SpaceLabel spaceLabel4;
+        private ReaLTaiizor.Controls.CrownTextBox crownTextBox1;
+        private ReaLTaiizor.Controls.CrownComboBox CategoryComboBox2;
+        private ReaLTaiizor.Controls.SpaceLabel spaceLabel3;
+        private ReaLTaiizor.Controls.Button button2;
+        private ReaLTaiizor.Controls.Button button1;
+        private ReaLTaiizor.Controls.ForeverClose foreverClose1;
     }
 }
