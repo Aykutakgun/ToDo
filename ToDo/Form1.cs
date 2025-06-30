@@ -38,6 +38,7 @@ namespace ToDo
         {
             poisonDataGridView1.DataSource = ToDoManager.getAll();
             poisonDataGridView1.Columns["id"].Visible = false; // Hide the ID column
+            poisonDataGridView1.Columns["Category"].Visible = false;
         }
         private void ComboboxDoldur()
         {

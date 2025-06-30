@@ -375,13 +375,14 @@
             // poisonDataGridView1
             // 
             poisonDataGridView1.AllowUserToResizeRows = false;
+            poisonDataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             poisonDataGridView1.BackgroundColor = Color.FromArgb(255, 255, 255);
             poisonDataGridView1.BorderStyle = BorderStyle.None;
-            poisonDataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.None;
-            poisonDataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            poisonDataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.Raised;
+            poisonDataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = Color.DarkGray;
-            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 162);
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 162);
             dataGridViewCellStyle1.ForeColor = Color.FromArgb(255, 255, 255);
             dataGridViewCellStyle1.SelectionBackColor = Color.DarkGray;
             dataGridViewCellStyle1.SelectionForeColor = Color.FromArgb(17, 17, 17);
