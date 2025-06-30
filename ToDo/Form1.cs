@@ -123,6 +123,7 @@ namespace ToDo
             {
                 id = Convert.ToInt32(poisonDataGridView1.SelectedRows[0].Cells["id"].Value),
                 Status = "Completed",
+                DueDate=DateTime.Now
             });
             DataGridDoldur();
         }

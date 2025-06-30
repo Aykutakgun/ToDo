@@ -72,6 +72,7 @@ namespace ToDo.DataAccess
                 if (existing != null)
                 {
                     existing.Status = todo.Status;
+                    existing.DueDate = todo.DueDate;
                     context.SaveChanges();
                 }
             }
