@@ -11,5 +11,8 @@ namespace ToDo.DataAccess
     {
        void Add(ToDoEntity todo);
        void Delete(int id);
+       List<ToDoEntity> getAll();
+       
+       List<ToDoEntity> GetAllByCategory(string category);
     }
 }

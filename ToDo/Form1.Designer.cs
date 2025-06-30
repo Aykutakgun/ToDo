@@ -34,6 +34,7 @@
             hopeDatePicker1 = new ReaLTaiizor.Controls.HopeDatePicker();
             separator1 = new ReaLTaiizor.Controls.Separator();
             nightPanel1 = new ReaLTaiizor.Controls.NightPanel();
+            button3 = new ReaLTaiizor.Controls.Button();
             crownTextBox2 = new ReaLTaiizor.Controls.CrownTextBox();
             spaceLabel4 = new ReaLTaiizor.Controls.SpaceLabel();
             crownTextBox1 = new ReaLTaiizor.Controls.CrownTextBox();
@@ -43,6 +44,8 @@
             spaceLabel2 = new ReaLTaiizor.Controls.SpaceLabel();
             spaceLabel1 = new ReaLTaiizor.Controls.SpaceLabel();
             panel1 = new ReaLTaiizor.Controls.Panel();
+            button5 = new ReaLTaiizor.Controls.Button();
+            button4 = new ReaLTaiizor.Controls.Button();
             foreverClose1 = new ReaLTaiizor.Controls.ForeverClose();
             button2 = new ReaLTaiizor.Controls.Button();
             button1 = new ReaLTaiizor.Controls.Button();
@@ -94,6 +97,7 @@
             // 
             // nightPanel1
             // 
+            nightPanel1.Controls.Add(button3);
             nightPanel1.Controls.Add(crownTextBox2);
             nightPanel1.Controls.Add(spaceLabel4);
             nightPanel1.Controls.Add(crownTextBox1);
@@ -110,8 +114,28 @@
             nightPanel1.Name = "nightPanel1";
             nightPanel1.RightSideColor = Color.FromArgb(41, 44, 61);
             nightPanel1.Side = ReaLTaiizor.Controls.NightPanel.PanelSide.Left;
-            nightPanel1.Size = new Size(278, 602);
+            nightPanel1.Size = new Size(278, 669);
             nightPanel1.TabIndex = 2;
+            // 
+            // button3
+            // 
+            button3.BackColor = Color.Transparent;
+            button3.BorderColor = Color.FromArgb(32, 34, 37);
+            button3.EnteredBorderColor = Color.FromArgb(165, 37, 37);
+            button3.EnteredColor = Color.FromArgb(32, 34, 37);
+            button3.Font = new Font("Microsoft Sans Serif", 12F);
+            button3.Image = null;
+            button3.ImageAlign = ContentAlignment.MiddleLeft;
+            button3.InactiveColor = Color.FromArgb(32, 34, 37);
+            button3.Location = new Point(204, 630);
+            button3.Name = "button3";
+            button3.PressedBorderColor = Color.FromArgb(165, 37, 37);
+            button3.PressedColor = Color.FromArgb(165, 37, 37);
+            button3.Size = new Size(58, 31);
+            button3.TabIndex = 13;
+            button3.Text = "Add";
+            button3.TextAlignment = StringAlignment.Center;
+            button3.Click += button3_Click;
             // 
             // crownTextBox2
             // 
@@ -121,7 +145,7 @@
             crownTextBox2.Location = new Point(90, 476);
             crownTextBox2.Multiline = true;
             crownTextBox2.Name = "crownTextBox2";
-            crownTextBox2.Size = new Size(172, 118);
+            crownTextBox2.Size = new Size(172, 148);
             crownTextBox2.TabIndex = 13;
             // 
             // spaceLabel4
@@ -129,7 +153,7 @@
             spaceLabel4.Customization = "/v7+/yoqKv8=";
             spaceLabel4.Font = new Font("Verdana", 8F);
             spaceLabel4.Image = null;
-            spaceLabel4.Location = new Point(12, 476);
+            spaceLabel4.Location = new Point(9, 476);
             spaceLabel4.Name = "spaceLabel4";
             spaceLabel4.NoRounding = false;
             spaceLabel4.Size = new Size(75, 40);
@@ -212,6 +236,8 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(39, 51, 63);
+            panel1.Controls.Add(button5);
+            panel1.Controls.Add(button4);
             panel1.Controls.Add(foreverClose1);
             panel1.Controls.Add(button2);
             panel1.Controls.Add(button1);
@@ -221,10 +247,49 @@
             panel1.Location = new Point(296, 9);
             panel1.Name = "panel1";
             panel1.Padding = new Padding(5);
-            panel1.Size = new Size(634, 602);
+            panel1.Size = new Size(977, 669);
             panel1.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             panel1.TabIndex = 2;
             panel1.Text = "panel1";
+            // 
+            // button5
+            // 
+            button5.BackColor = Color.Transparent;
+            button5.BorderColor = Color.FromArgb(32, 34, 37);
+            button5.EnteredBorderColor = Color.FromArgb(165, 37, 37);
+            button5.EnteredColor = Color.FromArgb(32, 34, 37);
+            button5.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 162);
+            button5.Image = null;
+            button5.ImageAlign = ContentAlignment.MiddleLeft;
+            button5.InactiveColor = Color.FromArgb(32, 34, 37);
+            button5.Location = new Point(896, 630);
+            button5.Name = "button5";
+            button5.PressedBorderColor = Color.FromArgb(165, 37, 37);
+            button5.PressedColor = Color.FromArgb(165, 37, 37);
+            button5.Size = new Size(64, 31);
+            button5.TabIndex = 14;
+            button5.Text = "Complete";
+            button5.TextAlignment = StringAlignment.Center;
+            // 
+            // button4
+            // 
+            button4.BackColor = Color.Transparent;
+            button4.BorderColor = Color.FromArgb(32, 34, 37);
+            button4.EnteredBorderColor = Color.FromArgb(165, 37, 37);
+            button4.EnteredColor = Color.FromArgb(32, 34, 37);
+            button4.Font = new Font("Microsoft Sans Serif", 12F);
+            button4.Image = null;
+            button4.ImageAlign = ContentAlignment.MiddleLeft;
+            button4.InactiveColor = Color.FromArgb(32, 34, 37);
+            button4.Location = new Point(260, 8);
+            button4.Name = "button4";
+            button4.PressedBorderColor = Color.FromArgb(165, 37, 37);
+            button4.PressedColor = Color.FromArgb(165, 37, 37);
+            button4.Size = new Size(120, 40);
+            button4.TabIndex = 13;
+            button4.Text = "All List";
+            button4.TextAlignment = StringAlignment.Center;
+            button4.Click += button4_Click;
             // 
             // foreverClose1
             // 
@@ -234,7 +299,7 @@
             foreverClose1.Dock = DockStyle.Right;
             foreverClose1.DownColor = Color.FromArgb(30, 0, 0, 0);
             foreverClose1.Font = new Font("Marlett", 10F);
-            foreverClose1.Location = new Point(611, 5);
+            foreverClose1.Location = new Point(954, 5);
             foreverClose1.Name = "foreverClose1";
             foreverClose1.OverColor = Color.FromArgb(30, 255, 255, 255);
             foreverClose1.Size = new Size(18, 18);
@@ -261,6 +326,7 @@
             button2.TabIndex = 11;
             button2.Text = "Work";
             button2.TextAlignment = StringAlignment.Center;
+            button2.Click += button2_Click;
             // 
             // button1
             // 
@@ -278,7 +344,7 @@
             button1.PressedColor = Color.FromArgb(165, 37, 37);
             button1.Size = new Size(120, 40);
             button1.TabIndex = 10;
-            button1.Text = "Personel";
+            button1.Text = "Personal";
             button1.TextAlignment = StringAlignment.Center;
             button1.Click += button1_Click;
             // 
@@ -290,10 +356,10 @@
             poisonDataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.None;
             poisonDataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = Color.FromArgb(0, 174, 219);
+            dataGridViewCellStyle1.BackColor = Color.DarkGray;
             dataGridViewCellStyle1.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
             dataGridViewCellStyle1.ForeColor = Color.FromArgb(255, 255, 255);
-            dataGridViewCellStyle1.SelectionBackColor = Color.FromArgb(0, 198, 247);
+            dataGridViewCellStyle1.SelectionBackColor = Color.DarkGray;
             dataGridViewCellStyle1.SelectionForeColor = Color.FromArgb(17, 17, 17);
             dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
             poisonDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
@@ -302,7 +368,7 @@
             dataGridViewCellStyle2.BackColor = Color.FromArgb(255, 255, 255);
             dataGridViewCellStyle2.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
             dataGridViewCellStyle2.ForeColor = Color.FromArgb(136, 136, 136);
-            dataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(0, 198, 247);
+            dataGridViewCellStyle2.SelectionBackColor = Color.RosyBrown;
             dataGridViewCellStyle2.SelectionForeColor = Color.FromArgb(17, 17, 17);
             dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
             poisonDataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
@@ -313,24 +379,24 @@
             poisonDataGridView1.Name = "poisonDataGridView1";
             poisonDataGridView1.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = Color.FromArgb(0, 174, 219);
+            dataGridViewCellStyle3.BackColor = Color.DarkGray;
             dataGridViewCellStyle3.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
             dataGridViewCellStyle3.ForeColor = Color.FromArgb(255, 255, 255);
-            dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(0, 198, 247);
+            dataGridViewCellStyle3.SelectionBackColor = Color.DarkGray;
             dataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(17, 17, 17);
             dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
             poisonDataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             poisonDataGridView1.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             poisonDataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            poisonDataGridView1.Size = new Size(618, 523);
+            poisonDataGridView1.Size = new Size(952, 553);
             poisonDataGridView1.TabIndex = 9;
             // 
             // separator2
             // 
             separator2.LineColor = Color.Gray;
-            separator2.Location = new Point(8, 51);
+            separator2.Location = new Point(8, 54);
             separator2.Name = "separator2";
-            separator2.Size = new Size(618, 14);
+            separator2.Size = new Size(952, 11);
             separator2.TabIndex = 2;
             separator2.Text = "separator2";
             // 
@@ -339,7 +405,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlDarkDark;
-            ClientSize = new Size(938, 623);
+            ClientSize = new Size(1284, 690);
             Controls.Add(panel1);
             Controls.Add(nightPanel1);
             FormBorderStyle = FormBorderStyle.None;
@@ -375,5 +441,8 @@
         private ReaLTaiizor.Controls.Button button2;
         private ReaLTaiizor.Controls.Button button1;
         private ReaLTaiizor.Controls.ForeverClose foreverClose1;
+        private ReaLTaiizor.Controls.Button button3;
+        private ReaLTaiizor.Controls.Button button4;
+        private ReaLTaiizor.Controls.Button button5;
     }
 }

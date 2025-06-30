@@ -13,7 +13,7 @@ namespace ToDo.DataAccess
         {
             using (var context = new AppDbContext())
             {
-                context.ToDos.Add(todo);
+                context.ToDoTable.Add(todo);
                 context.SaveChanges();
             }
         }
@@ -22,12 +22,28 @@ namespace ToDo.DataAccess
         {
             using (var context = new AppDbContext())
             {
-                var todo = context.ToDos.Find(id);
+                var todo = context.ToDoTable.Find(id);
                 if (todo != null)
                 {
-                    context.ToDos.Remove(todo);
+                    context.ToDoTable.Remove(todo);
                     context.SaveChanges();
                 }
+            }
+        }
+
+        public List<ToDoEntity> getAll()
+        {
+            using (var context = new AppDbContext())
+            {
+                return context.ToDoTable.ToList();
+            }
+        }
+
+        public List<ToDoEntity> GetAllByCategory(string category)
+        {
+            using (var context = new AppDbContext())
+            {
+                return context.ToDoTable.Where(t => t.Category == category).ToList();
             }
         }
     }

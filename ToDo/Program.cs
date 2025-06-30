@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using ToDo.DataAccess;
+
 namespace ToDo
 {
     internal static class Program
@@ -8,8 +11,10 @@ namespace ToDo
         [STAThread]
         static void Main()
         {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
+            using(var context = new AppDbContext())
+            {
+                context.Database.Migrate(); // Ensure the database is created
+            }
             ApplicationConfiguration.Initialize();
             Application.Run(new Form1());
         }
