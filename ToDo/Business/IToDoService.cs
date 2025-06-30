@@ -11,10 +11,9 @@ namespace ToDo.Business
     {
         void Add(ToDoEntity todo);
         void Delete(int id);
-        // Other methods can be added here as needed
+        
+        void UpdateStatus(ToDoEntity todo);
         List<ToDoEntity> getAll();
         List<ToDoEntity> GetAllByCategory(string category);
-
-
     }
 }

@@ -46,5 +46,18 @@ namespace ToDo.DataAccess
                 return context.ToDoTable.Where(t => t.Category == category).ToList();
             }
         }
+
+        public void UpdateStatus(ToDoEntity todo)
+        {
+            using (var context = new AppDbContext())
+            {
+                var existing = context.ToDoTable.FirstOrDefault(t => t.id == todo.id);
+                if (existing != null)
+                {
+                    existing.Status = todo.Status;
+                    context.SaveChanges();
+                }
+            }
+        }
     }
 }

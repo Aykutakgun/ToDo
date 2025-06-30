@@ -35,5 +35,10 @@ namespace ToDo.Business
         {
             return _todoDal.GetAllByCategory(category);
         }
+
+        public void UpdateStatus(ToDoEntity todo)
+        {
+           _todoDal.UpdateStatus(todo);
+        }
     }
 }

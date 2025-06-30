@@ -114,5 +114,15 @@ namespace ToDo
             }
         }
         #endregion
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            ToDoManager.UpdateStatus(new ToDoEntity
+            {
+                id = Convert.ToInt32(poisonDataGridView1.SelectedRows[0].Cells["id"].Value),
+                Status = "Completed",
+            });
+            DataGridDoldur();
+        }
     }
 }

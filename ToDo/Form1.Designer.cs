@@ -270,6 +270,7 @@
             button5.TabIndex = 14;
             button5.Text = "Complete";
             button5.TextAlignment = StringAlignment.Center;
+            button5.Click += button5_Click;
             // 
             // button4
             // 
