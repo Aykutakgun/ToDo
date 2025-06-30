@@ -44,6 +44,7 @@
             spaceLabel2 = new ReaLTaiizor.Controls.SpaceLabel();
             spaceLabel1 = new ReaLTaiizor.Controls.SpaceLabel();
             panel1 = new ReaLTaiizor.Controls.Panel();
+            button6 = new ReaLTaiizor.Controls.Button();
             button5 = new ReaLTaiizor.Controls.Button();
             button4 = new ReaLTaiizor.Controls.Button();
             foreverClose1 = new ReaLTaiizor.Controls.ForeverClose();
@@ -236,6 +237,7 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(39, 51, 63);
+            panel1.Controls.Add(button6);
             panel1.Controls.Add(button5);
             panel1.Controls.Add(button4);
             panel1.Controls.Add(foreverClose1);
@@ -251,6 +253,26 @@
             panel1.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             panel1.TabIndex = 2;
             panel1.Text = "panel1";
+            // 
+            // button6
+            // 
+            button6.BackColor = Color.Transparent;
+            button6.BorderColor = Color.FromArgb(32, 34, 37);
+            button6.EnteredBorderColor = Color.FromArgb(165, 37, 37);
+            button6.EnteredColor = Color.FromArgb(32, 34, 37);
+            button6.Font = new Font("Microsoft Sans Serif", 12F);
+            button6.Image = null;
+            button6.ImageAlign = ContentAlignment.MiddleLeft;
+            button6.InactiveColor = Color.FromArgb(32, 34, 37);
+            button6.Location = new Point(832, 630);
+            button6.Name = "button6";
+            button6.PressedBorderColor = Color.FromArgb(165, 37, 37);
+            button6.PressedColor = Color.FromArgb(165, 37, 37);
+            button6.Size = new Size(58, 31);
+            button6.TabIndex = 14;
+            button6.Text = "Delete";
+            button6.TextAlignment = StringAlignment.Center;
+            button6.Click += button6_Click;
             // 
             // button5
             // 
@@ -445,5 +467,6 @@
         private ReaLTaiizor.Controls.Button button3;
         private ReaLTaiizor.Controls.Button button4;
         private ReaLTaiizor.Controls.Button button5;
+        private ReaLTaiizor.Controls.Button button6;
     }
 }

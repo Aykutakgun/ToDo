@@ -13,6 +13,8 @@ namespace ToDo.Business
         void Delete(int id);
         
         void UpdateStatus(ToDoEntity todo);
+        List<ToDoEntity> GetAllByDate(DateTime toDo);
+        List<ToDoEntity> GetAllByDateAndCategory(DateTime toDo, string category);
         List<ToDoEntity> getAll();
         List<ToDoEntity> GetAllByCategory(string category);
     }

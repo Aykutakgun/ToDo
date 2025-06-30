@@ -14,7 +14,9 @@ namespace ToDo.DataAccess
 
        void UpdateStatus(ToDoEntity todo);
    
-       List<ToDoEntity> getAll();
+       List<ToDoEntity> GetAllByDateAndCategory(DateTime toDo, string category);
+        List<ToDoEntity> GetAllByDate(DateTime toDo);
+        List<ToDoEntity> getAll();
        
        List<ToDoEntity> GetAllByCategory(string category);
     }

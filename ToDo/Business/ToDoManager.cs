@@ -36,6 +36,16 @@ namespace ToDo.Business
             return _todoDal.GetAllByCategory(category);
         }
 
+        public List<ToDoEntity> GetAllByDate(DateTime toDo)
+        {
+            return _todoDal.GetAllByDate(toDo);
+        }
+
+        public List<ToDoEntity> GetAllByDateAndCategory(DateTime toDo, string category)
+        {
+            return _todoDal.GetAllByDateAndCategory(toDo,category);
+        }
+
         public void UpdateStatus(ToDoEntity todo)
         {
            _todoDal.UpdateStatus(todo);

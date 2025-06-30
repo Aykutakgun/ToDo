@@ -75,16 +75,18 @@ namespace ToDo
         #region Button category list
         private void button1_Click(object sender, EventArgs e)
         {
-            poisonDataGridView1.DataSource = ToDoManager.GetAllByCategory("Personal");
+            DateTime selectedDate = hopeDatePicker1.Date;
+            poisonDataGridView1.DataSource = ToDoManager.GetAllByDateAndCategory(selectedDate,"Personal");
         }
         private void button2_Click(object sender, EventArgs e)
         {
-            poisonDataGridView1.DataSource = ToDoManager.GetAllByCategory("Work");
-
+            DateTime selectedDate = hopeDatePicker1.Date;
+            poisonDataGridView1.DataSource = ToDoManager.GetAllByDateAndCategory(selectedDate, "Work");
         }
         private void button4_Click(object sender, EventArgs e)
         {
-            DataGridDoldur();
+            DateTime selectedDate = hopeDatePicker1.Date;
+            poisonDataGridView1.DataSource = ToDoManager.GetAllByDate(selectedDate);
         }
         #endregion
 
@@ -122,6 +124,12 @@ namespace ToDo
                 id = Convert.ToInt32(poisonDataGridView1.SelectedRows[0].Cells["id"].Value),
                 Status = "Completed",
             });
+            DataGridDoldur();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            ToDoManager.Delete(Convert.ToInt32(poisonDataGridView1.SelectedRows[0].Cells["id"].Value));
             DataGridDoldur();
         }
     }

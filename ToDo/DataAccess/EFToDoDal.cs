@@ -47,6 +47,23 @@ namespace ToDo.DataAccess
             }
         }
 
+        public List<ToDoEntity> GetAllByDate(DateTime toDo)
+        {
+            using (var context = new AppDbContext())
+            {
+                return context.ToDoTable.Where(t => t.StartDate.Date == toDo.Date).ToList();
+            }
+        }
+
+        public List<ToDoEntity> GetAllByDateAndCategory(DateTime toDo,string category)
+        {
+            using (var context = new AppDbContext())
+            {
+                return context.ToDoTable.Where(t => t.StartDate.Date == toDo && 
+                                          t.Category == category).ToList();
+            }
+        }
+
         public void UpdateStatus(ToDoEntity todo)
         {
             using (var context = new AppDbContext())
