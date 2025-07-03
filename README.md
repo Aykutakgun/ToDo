@@ -1,28 +1,44 @@
-# 🗂️ Görev Takip ve Planlama Uygulaması
+# 🗂️ Görev Takip ve Planlama Uygulaması | Task Management and Planning App
 
-Bu proje, kişisel ve iş hayatındaki görevlerinizi kolayca yönetmenizi sağlayan bir masaüstü uygulamasıdır.
-C# ile WinForms kullanılarak geliştirilmiş, veritabanı işlemleri için SQLite ve Entity Framework (Code First) kullanılmıştır.
+Bu proje, kişisel ve iş hayatındaki görevlerinizi kolayca planlayıp takip etmenizi sağlayan bir masaüstü uygulamasıdır.  
+This project is a desktop application that allows you to easily plan and track your personal and work-related tasks.
 
-## 🎯 Temel Özellikler
+## 🎯 Temel Özellikler | Key Features
 
-- 📌 **Görev Ekleme**: Görev açıklaması, önceliği, kategorisi ve not bilgileriyle birlikte kayıt edilir.  
-- 📂 **Kategori Bazlı Listeleme**: Kişisel, iş veya tüm görevleri listeleme imkânı (Personal, Work, All List).  
-- 🗓️ **Takvim Seçimi**: Görev başlangıç ve bitiş tarihleri takvim üzerinden seçilir.  
-- ✅ **Görev Durumu Yönetimi**: Görevler "Tamamlandı" veya "Silindi" olarak güncellenebilir.  
-- 🧾 **Görev Bilgisi Tablosu**: Tüm görevler `TaskInfo`, `Priority`, `Status`, `StartDate`, `DueDate` ve `Note` bilgileriyle DataGridView'de listelenir.  
-- 🌙 **Dark Theme UI**: Modern ve sade karanlık arayüz ile kullanıcı dostu deneyim.  
+- 📌 **Görev Ekleme / Task Entry**: Görev açıklaması, öncelik, kategori ve not bilgisi ile görev oluşturma  
+  Create tasks with description, priority, category, and optional notes.
 
-## 🛠️ Kullanılan Teknolojiler
+- 📂 **Kategori Bazlı Filtreleme / Category-based Filtering**:  
+  Kişisel, iş veya tüm görevleri filtreleme (Personal, Work, All List).  
+  Filter tasks by category: personal, work, or all list.
+
+- 🗓️ **Takvim Seçimi / Calendar Integration**:  
+  Başlangıç ve bitiş tarihlerini takvim üzerinden seçme.  
+  Select start and due dates using the built-in calendar.
+
+- ✅ **Durum Güncelleme / Status Update**:  
+  Görevleri tamamlandı olarak işaretleme veya silme.  
+  Mark tasks as complete or delete them easily.
+
+- 🧾 **Görev Listesi Tablosu / Task Grid View**:  
+  Tüm görevleri tablo halinde görselleştirme.  
+  View all tasks with details such as priority, status, dates, and notes.
+
+- 🌙 **Koyu Tema / Dark Theme UI**:  
+  Modern ve sade kullanıcı arayüzü.  
+  Modern and clean dark-themed interface.
+
+## 🛠️ Kullanılan Teknolojiler | Technologies Used
 
 - C# (.NET Framework)  
 - Windows Forms (WinForms)  
 - SQLite  
-- Entity Framework - Code First Yaklaşımı  
+- Entity Framework (Code First)
 
-## 🧩 Ekran Görüntüsü
+## 🧩 Ekran Görüntüsü | Screenshot
 ![todo](https://github.com/user-attachments/assets/21ec2d96-58ce-4d46-ad4d-60afd15535f5)
 
-## 🚀 Kurulum
+## 🚀 Kurulum | Installation
 akgnaykut@gmail.com iletişime geçebilirsiniz.
 
 1. Bu repoyu klonlayın:
