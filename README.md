@@ -27,4 +27,4 @@ akgnaykut@gmail.com iletişime geçebilirsiniz.
 
 1. Bu repoyu klonlayın:
    ```bash
-   git clone https://github.com/kullaniciadi/GorevTakipUygulamasi.git
+ 
